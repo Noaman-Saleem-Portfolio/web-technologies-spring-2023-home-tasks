@@ -1,0 +1,27 @@
+.flex-container {
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid green;
+}
+
+.first-box {
+    background-color: red;
+}
+
+.second-box {
+    background-color: blue;
+}
+
+.third-box {
+    background-color: pink;
+}
+
+.forth-box {
+    background-color: mediumaquamarine;
+}
+
+.fifth-box {
+    background-color: aquamarine;
+}

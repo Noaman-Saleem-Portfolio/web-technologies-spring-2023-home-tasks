@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.box {
+    border: 1px solid green;
+    width: 300px;
+}
+
+.first-box {
+    background-color: red;
+}
+
+.second-box {
+    background-color: blue;
+    align-self: flex-end;
+}
+
+.third-box {
+    background-color: pink;
+}
+
+.forth-box {
+    background-color: mediumaquamarine;
+}
+
+.fifth-box {
+    background-color: aquamarine;
+}

@@ -1,0 +1,91 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general classes */
+.container {
+    /* max-width: 1200px; */
+    width: 85%;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/id/1343152988/photo/shot-of-an-unrecognisable-businesswoman-using-a-laptop-while-working-remotely.jpg?b=1&s=170667a&w=0&k=20&c=uWnxfPXToHSVaFy6bwQP-dPzHa4YJMBnhHf_eEK4PRs=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header-content */
+.header-content {
+    width: 600px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(9, 110, 9);
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.header a:hover {
+    background-color: grey;
+
+}
+
+/* ######## Faculty ############## */
+.faculty-section {
+    background-color: rgb(233, 229, 229);
+    padding-top: 30px;
+}
+
+.trainers {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.faculty {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.faculty .trainer-data {
+    /* padding: 45px; */
+    /* background-color: red; */
+    flex-basis: 300px;
+    /* width: 300px; */
+    margin-bottom: 30px;
+}
+
+.faculty .trainer-data h4 {
+    margin: 5px 0;
+}
+
+.faculty .trainer-data img {
+    border-radius: 230px;
+}
