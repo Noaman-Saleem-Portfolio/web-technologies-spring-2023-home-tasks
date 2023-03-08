@@ -9,7 +9,7 @@
 .container {
     /* max-width: 1200px; */
     width: 85%;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 0 auto;
 }
 
@@ -88,4 +88,49 @@
 
 .faculty .trainer-data img {
     border-radius: 230px;
+}
+
+/* ########## skills ################ */
+.skills {
+    background-color: rgb(198, 226, 217);
+    padding: 20px 0px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills p {
+    font-weight: bold;
+}
+
+.skills .skill-bar {
+    background-color: white;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.skills .html {
+    background-color: #04aa6d;
+    width: 60%;
+    text-align: right;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.skills .css {
+    background-color: #2196f3;
+    width: 40%;
+    text-align: right;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.skills .js {
+    background-color: #f44336;
+    width: 80%;
+    text-align: right;
+    font-weight: bolder;
+    padding: 10px 0;
 }
