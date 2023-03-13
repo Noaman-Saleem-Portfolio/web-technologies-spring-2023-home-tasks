@@ -1,0 +1,159 @@
+/* Universal ######################## */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Head ############################ */
+.head{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://media.istockphoto.com/id/1343152988/photo/shot-of-an-unrecognisable-businesswoman-using-a-laptop-while-working-remotely.jpg?b=1&s=170667a&w=0&k=20&c=uWnxfPXToHSVaFy6bwQP-dPzHa4YJMBnhHf_eEK4PRs=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+}
+
+.head-content{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 900px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.head .head-content p{
+    padding: 0 10px;
+}
+
+.head .head-content a{
+    background-color: rgb(13, 92, 13);
+    color: white;
+    padding: 7px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /* height: 50px; */
+    font-size: 12px;
+}
+
+.head .head-content a:hover{
+    background-color: rgb(113, 111, 111);
+}
+
+/* Faculty ################################ */
+.faculty-section{
+    background-color: rgb(231, 220, 220);
+    padding: 35px 0;
+}
+
+.faculty-section h2{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faculty-section img{
+    width: 170px;
+    height: 170px;
+}
+
+.faculty-data-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* background-color: aqua; */
+    justify-content: space-around;
+}
+
+.faculty-data{
+    /* background-color: pink; */
+    padding: 20px;
+    flex-basis: 300px;
+    /* width: 300px; */
+}
+
+/* technology-section ####################### */
+.technology-section{
+    background-color: rgb(205, 228, 237);
+    padding: 35px 0px;
+}
+
+.technology-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.technology-section h2{
+    margin-bottom: 15px;
+}
+
+.progress-bar{
+    /* width: 60%; */
+    background-color: slategray;
+    margin-bottom: 15px;
+    /* height: 30px; */
+    /* padding: 30px; */
+}
+
+.progress-bar-html{
+    width: 80%;
+    background-color: #04aa6d;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.progress-bar-css{
+    width: 60%;
+    background-color: #2196f3;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.progress-bar-js{
+    width: 40%;
+    background-color: #f44336;
+    text-align: right;
+    padding: 10px 0;
+}
+
+/* Media Query ############# */
+@media screen and (max-width: 992px){
+    .head-content{
+        width: 700px;
+    }
+
+    .faculty-data{
+        flex-basis: 330px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .head-content{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .head-content{
+        width: 450px;
+    }
+
+    .head-content h1{
+        font-size: 28px;
+    }
+
+    .head-content p{
+        font-size: 12px;
+    }
+}
