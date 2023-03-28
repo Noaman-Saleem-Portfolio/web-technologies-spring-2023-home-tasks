@@ -1,3 +1,16 @@
-#navbarSupportedContent > ul > li > a{
-    color: red;
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: pink !important
+}
+
+.navbar-style {
+    background-color: cornflowerblue;
+}
+
+/* .navbar-style ul.navbar-nav li.nav-item a {
+    color: violet;
+} */
+
+#navbarSupportedContent>ul>li>a {
+    color: violet;
 }
