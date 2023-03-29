@@ -1,10 +1,12 @@
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: pink !important
+    background-color: pink !important;
+   
 }
 
 .navbar-style {
     background-color: cornflowerblue;
+    /* height: 150px; */
 }
 
 /* .navbar-style ul.navbar-nav li.nav-item a {
@@ -13,4 +15,8 @@
 
 #navbarSupportedContent>ul>li>a {
     color: violet;
+}
+
+.services{
+    background-color: burlywood;
 }
