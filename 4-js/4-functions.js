@@ -123,8 +123,10 @@ function outer(){
     let superHero = `Spiderman`
 
     function inner(){
+        // let dummy="Dummy"
         console.log(`${superHero} HELP US!!!!!!!!!!!`);
     }
 
     inner()
+    // console.log(dummy);
 }
