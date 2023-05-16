@@ -2,9 +2,12 @@ const express = require("express")
 const app = express()
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
-const { log } = require("console");
+const methodOverride = require("method-override");
 
 const port = 5000
+
+// override with POST having ?_method=DELETE/PATCH
+app.use(methodOverride("_method"));
 
 // // for parsing application/x-www-form-urlencoded
 app.use(express.urlencoded({extended:true}))
@@ -102,6 +105,29 @@ app.get("/blogs/:id",(req,res) => {
   res.render("blogs/show",{foundBlog})
 })
 
+//form to edit specific blog
+app.get("/blogs/:id/edit",(req,res)=>{
+  const {id} = req.params
+  const foundBlog = blogs.find((blog) =>  blog.id === id)
+  res.render("blogs/edit",{foundBlog})
+})
+
+//update spacific blog
+app.patch("/blogs/:id",(req,res)=>{
+  // console.log(`Update API Hit!`);
+  const {id} = req.params
+  const {title, description, image} = req.body
+  //Quiz Write the code to update array element by youself
+  res.redirect("/blogs")
+})
+
+//delete spacific blog
+app.delete("/blogs/:id",(req,res)=>{
+  // console.log(`Update API Hit!`);
+  const {id} = req.params
+  
+  //Quiz Write the code todelete the array element by youself
+})
 
 app.listen(port,() => {
     console.log(`Server listening at port ${port}`);

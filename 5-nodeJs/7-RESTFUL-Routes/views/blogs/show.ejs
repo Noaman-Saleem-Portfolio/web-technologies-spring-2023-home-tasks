@@ -22,7 +22,19 @@
       <img src="<%= foundBlog.image  %>" alt="" />
       <h2><%= foundBlog.title %></h2>
       <p><%= foundBlog.description %></p>
+
       <a href="/blogs" class="btn btn-primary">Go Back</a>
+
+      <a href="/blogs/<%= foundBlog.id %>/edit" class="btn btn-success">Edit</a>
+
+      <form
+        action="/blogs/<%= foundBlog.id %>?_method=delete"
+        method="post"
+        style="display: inline-block"
+      >
+        <button class="btn btn-danger">Delete</button>
+      </form>
+
       <hr />
     </div>
 
