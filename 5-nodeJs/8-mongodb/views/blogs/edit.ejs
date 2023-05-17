@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Blog</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <%- include("../partials/navbar.ejs") %>
+
+    <div class="container">
+      <h1>Edit the Blog</h1>
+
+      <form action="/blogs/<%= foundBlog.id %>?_method=patch" method="post">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            value="<%= foundBlog.title %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            value="<%= foundBlog.description %>"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Image-URL</label>
+          <input
+            type="text"
+            class="form-control"
+            id="image"
+            name="image"
+            value="<%= foundBlog.image %>"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

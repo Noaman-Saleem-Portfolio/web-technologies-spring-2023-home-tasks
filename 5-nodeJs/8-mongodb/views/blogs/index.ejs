@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blogs</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <%- include("../partials/navbar.ejs") %>
+
+    <div class="container">
+      <h1>All Blogs</h1>
+
+      <% for(let blog of blogs){ %>
+      <img src="<%= blog.image  %>" alt="" />
+      <h2><%= blog.title %></h2>
+      <p><%= blog.description %></p>
+      <a href="/blogs/<%= blog.id %>" class="btn btn-warning">More</a>
+
+      <form
+        action="/blogs/<%= blog.id %>?_method=delete"
+        method="post"
+        style="display: inline-block"
+      >
+        <button class="btn btn-danger">Delete</button>
+      </form>
+
+      <hr />
+      <% } %>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
